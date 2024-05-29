@@ -54,7 +54,8 @@ export default {
             error: "",
             info: null,
             citylist: cities.list,
-            tempCur: "black"
+            tempCur: "black",
+            apiID: "" //Write your api key here.
         }
     },
     computed: {
@@ -70,7 +71,7 @@ export default {
             }
             this.info = null
             this.error = ""
-            const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + this.city + '&units=metric&appid=367c5388e79299b1c73a510405463114'
+            const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + this.city + '&units=metric&appid=' + this.apiID
             try {
                 const res = await axios.get(apiUrl)
                 console.log('Успешный запрос', res.data.cod)

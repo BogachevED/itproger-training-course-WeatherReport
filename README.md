@@ -1,6 +1,6 @@
-# classeproject
+# weather-report
 
-This template should help get you started developing with Vue 3 in Vite.
+The application displays the weather from the list of cities in the Russian Federation. Made using Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
@@ -9,6 +9,10 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Interaction with the API
+
+The application worked on [Open weather map](https://api.openweathermap.org) and you need an API key to work correctly. Internet connection is also required.
 
 ## Project Setup
 
